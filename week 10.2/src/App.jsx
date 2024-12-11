@@ -1,19 +1,12 @@
-import { useState } from "react"
-import AppBar from "./components/AppBar"
-import Login from "./components/Login"
-import Home from "./components/Home"
 
 function App() {
-  const [isLogin,setLogin]=useState(false)
-  const [userName,setUserName]=useState("")
-
   return (
-    <div>
-      <AppBar userName={userName} isLogin={isLogin} setLogin={setLogin}/>
-      {isLogin?<Home/>:<Login setLogin={setLogin} setUserName={setUserName}/>}
-
-
-    </div>
+   <div>
+  <h1 className="text-9  text-red-400">Hi there</h1>
+  <div>
+    <button className="w-80">Button</button>
+  </div>
+   </div>
   )
 }
 
